@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tic Tac Toe</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <div class="container">
+
+    <h1>🧩 Tic Tac Toe</h1>
+
+    <div id="step1">
+      <input id="player1" placeholder="Enter your name">
+      <button id="nextBtn">Next</button>
+    </div>
+
+    <div id="step2" style="display:none;">
+      <button id="friendBtn">👥 Play with Friend</button>
+      <button id="cpuBtn">🤖 Play with Computer</button>
+    </div>
+
+    <div id="step3" style="display:none;">
+      <input id="player2" placeholder="Enter Player 2 name">
+      <button id="startGameBtn">Start Game</button>
+    </div>
+
+    <div id="gameUI" style="display:none;">
+      <h3 id="welcomeText"></h3>
+      <div id="status"></div>
+      <div class="board" id="board"></div>
+    </div>
+
+  </div>
+
+  <div class="modal" id="winnerModal">
+    <div class="winner-card">
+      <h2 id="winnerText"></h2>
+      <button id="restartBtn">Play Again</button>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <script src="js/script.js" defer></script>
+
+</body>
+
+</html>
